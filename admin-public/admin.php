@@ -32,7 +32,7 @@
       $resultado=$conn->query($sql);
 
       ?>
-       <table class="tabla-usuarios">
+       <table class="tabla-usuarios table table-striped table-bordered">
            <tr>
                 <td><center>ID</center></td>
                 <td><center>USUARIO</center></td>
@@ -54,6 +54,7 @@
         </table>
     </div>
     </div>
+
   </div>
 
 
