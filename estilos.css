@@ -1,0 +1,241 @@
+*, *:before, *:after{
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  background: #f4f4f4;
+}
+.menu{
+  background-color: rgb(255, 255, 255);
+  height: 75px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #fff;
+  box-shadow: 5px 0 150px rgb(0, 4, 2);
+}
+.logo{
+  color:rgb(0,0,0);
+  font-size: 35px;
+  padding: 0 80px;
+  font-weight: bold;
+  text-decoration:none;
+}
+.menu_items{
+  display: flex;
+  list-style: none;
+  margin-right: 30px;
+}
+.menu_items li {
+  border-radius: 3px;
+  margin: 0 5px;
+}
+.menu_items li a  {
+  padding: 7px 13px;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  text-transform: uppercase;
+  color:rgb(0, 0, 0);
+}
+.menu_items li:hover, li.active {
+  background-color: rgb(130, 122, 123);
+  transition: .4s;
+}
+.btn_menu{
+  margin-right: 30px;
+  font-size: 25px;
+  color: rgb(0,0,0);
+  cursor: pointer;
+  display: none;
+}
+ul.show{
+  top: 65px;
+}
+
+@media screen and (max-width: 952px){
+  .logo{
+    padding-left: 25px;
+  }
+  .menu_items li a{
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 858px){
+  .menu{
+    height: 65px;
+  }
+  .btn_menu{
+    display:  inline-flex;
+  }
+  .menu_items{
+    position: fixed;
+    width: 100vw;
+    height: calc(100%-65px);
+    background: rgb(51, 57, 52);
+    top: -100vh;
+    text-align: center;
+    transition: all .4s;
+    flex-direction: column;
+  }
+  .menu_items li{
+    margin: 30px 0 0 0;
+    line-height: 30px;
+  }
+  .menu_items li:hover{
+    background: none;
+  }
+  .menu_items li a {
+    font-size: 20px;
+    color: rgb(247, 247, 247);
+    font-weight: bold;
+  }
+  .menu_items li a:hover{
+    color: rgb(255, 8, 0);
+  }
+  .logo{
+    font-size: 25px;
+    padding-left: 35px;
+  }
+
+  .footer{
+    text-align: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 858px) and (orientation: landscape){
+  .menu_items li{
+    margin: 5px 0 0 0;
+  }
+  .menu_items{
+    overflow: scroll;
+    height: calc(100%-65px);
+  }
+}
+
+.footer{
+  background: rgb(250, 250, 250);
+  height: 75px;
+  width: 100vw;
+  color: rgb(0,0,0);
+  padding-left: 1rem;
+  padding-top: 1rem;
+  font-weight: 50;
+}
+.logos{
+  float: right;
+  padding-right: 2.5rem;
+}
+
+.formulario_area{
+  height: 30rem;
+  width: 100%;
+  padding-top: 1rem;
+}
+.formulario{
+  height: 25rem;
+  width: min(60rem, 100%); /* ancho del area del formulario*/
+  margin: 0 auto;
+}
+
+.formulario legend{
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.inputs{
+  margin: 0 auto;
+  width: min(20rem, 100%);
+}
+
+.inputs input{
+  text-align: center;
+  width: 100%;
+  height: 2rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.inputs input[type="submit"]{
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  cursor: pointer;
+}
+.formulario_area_consultas{
+  height: 10rem;
+  width: 100%;
+  padding-top: 1rem;
+}
+
+.muestras{
+  background-image: url(../IMG/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 35rem;
+  position: relative;
+}
+.banner{
+  background-image: url(../IMG/mar.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 35rem;
+  position: relative;
+}
+@media screen and (max-width: 858px){
+  .muestras, .banner{
+    height:45rem;
+  }
+}
+.formulario_area legend{
+  color: rgb(0, 0, 0);
+}
+.text legend{
+  padding: 0.5rem;
+}
+.unidad1{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  height: auto;
+  width: 100vw;
+  text-align: center;
+}
+.unidad1 h3{
+  text-transform: uppercase;
+}
+.unidad1--cuadro{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  width: min(60rem,100%);
+  margin: 0 auto;
+}
+@media screen and (max-width: 858px){
+  .unidad1--cuadro{
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+.unidad1--cuadro p{
+  font-size: 1.5rem;
+}
+.unidad1--lenguajes{
+
+}
+.unidad1--lenguajes2{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+
+.contenedor_ractiva h2{
+  margin-top: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<div class="contenido-total">
+
+  <head>
+    <meta charset="utf-8">
+    <title>PROYECTO HOTEL || Naren Martinez</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"&amp;gt;>
+    <script src="https://kit.fontawesome.com/c1eae85dfa.js" crossorigin=" "> </script>
+    <script SRC="app.js" defer> </script>
+    <link rel="stylesheet" href="estilos.css">
+  </head>
+<div class="contenedor_total">
+
+  <div class="menu">
+    <label  class="logo" for="">HOTEL SOL DEL MAR</label>
+    <ul class="menu_items">
+      <li> <a href="index.html">INCIO</a> </li>
+      <li> <a href="reservas.html">RESERVAS</a> </li>
+      <li> <a href="consultas.html">CONSULTAS</a> </li>
+      <li> <a href="#">NOSOTROS</a> </li>
+      <li> <a href="login.html">INGRESAR</a> </li>
+      <li> <a href="#">SALIR</a> </li>
+    </ul>
+    <span class="btn_menu">
+      <i class="fa fa-bars"></i>
+    </span>
+  </div>
+  <body>
+
+    <div class="formulario_area_consultas">
+
+      <div class="formulario">
+        <legend>CONSULTA LOS DATOS DE TU RESERVA</legend>
+
+        <form class="formulario1" action="./php/consultar.php" method="post">
+          <div class="inputs">
+            <input type="text" name="identificacion" value="" placeholder="IDENTIFICACION">
+            <input type="submit" name="registrar" value="BUSCAR">
+          </div>
+        </form>
+
+      </div>
+    </div>
+
+    <div class="formulario_area">
+      <div class="formulario">
+        <legend> REALIZA TU RESERVA</legend>
+        <form class="formulario1" action="" method="post">
+
+          <div class="inputs">
+            <input type="text" name="nombres" value="" placeholder="NOMBRES">
+            <input type="text" name="apellidos" value="" placeholder="APELLIDOS">
+            <input type="text" name="identificacion" value="" placeholder="IDENTIFICACION">
+            <input type="text" name="telefono" value="" placeholder="N° DE TELEFONO">
+            <input type="date" name="f_entrada" value="">
+            <input type="date" name="f_salida" value="">
+            <input type="email" name="correo" value="" placeholder="CORREO">
+            <input type="submit" name="registrar" value="REGISTRAR">
+          </div>
+        </form>
+      </div>
+    </div>
+
+
+
+  </body>
+  <footer class="footer">
+    <label for="">Desarrollado por: NMC</label> <br>
+    <label for="">Copyright © 2022</label>
+  </footer>
+
+
+</div>
+
+
+</html>
