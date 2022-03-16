@@ -239,3 +239,16 @@ ul.show{
   text-align: center;
   text-transform: uppercase;
 }
+.cont{
+
+  margin: 0 auto;
+}
+.usuarios h2{
+  text-align: center;
+  text-transform: uppercase;
+}
+.tabla-usuarios{
+  border: solid;
+  width: 40rem;
+  margin: 0 auto;
+}
