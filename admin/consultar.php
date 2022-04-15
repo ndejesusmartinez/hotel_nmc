@@ -1,5 +1,5 @@
 <?php
-require "../php/conexion.php";
+require ".././controlador/conexion.php";
 
 $identificacion=$_POST['identificacion'];
 
@@ -17,6 +17,7 @@ $resultado=$conn->query($sql);
           <td><center>CORREO</center></td>
           <td><center>IDENTIFICACION</center></td>
           <td><center>TELEFONO</center></td>
+          <td><center>ESTADO</center></td>
      </tr>
 
  <?php
@@ -24,7 +25,7 @@ while ($datos=$resultado->fetch_array())
  {
  ?>
  <tr>
- <td><center><?php echo $datos['id']?><center></td>
+ <td><center><?php echo $datos['idReserva']?><center></td>
  <td><center><?php echo $datos['nombres']?></center></td>
  <td><center><?php echo $datos['apellidos']?><center></td>
  <td><center><?php echo $datos['f_entrada']?><center></td>
@@ -32,6 +33,7 @@ while ($datos=$resultado->fetch_array())
  <td><center><?php echo $datos['correo']?><center></td>
  <td><center><?php echo $datos['identificacion']?><center></td>
  <td><center><?php echo $datos['telefono']?><center></td>
+ <td><center><?php echo $datos['estado']?><center></td>
 </tr>
 <?php
  }

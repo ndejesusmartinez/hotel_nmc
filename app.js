@@ -7,18 +7,32 @@ addEventListener('DOMContentLoaded', () =>{
     })
   }
 }
-function captura(){
-let nombre=document.getElementById("nombre").value;
-let apellidos=document.getElementById("apellidos").value;
-let identificacion=document.getElementById("identificacion").value;
-let telefono=document.getElementById("telefono").value;
-let f_entrada=document.getElementById("f_entrada").value;
-let f_salida=document.getElementById("f_salida").value;
-let correo=document.getElementById("correo").value;
-if (nombre == "" || apellidos == "" || identificacion == "" || telefono == "" || f_entrada == "" || f_salida == "" || correo == "") {
-  alert('campos vacio, por favor llena todos los datos');
-}else {
-  alert('enviado');
-}
-}
 )
+
+
+
+function confirmar(){
+  let datos ='';
+  datos+= `<div class="resultss">
+  <form class="" method="post" action=".././controlador/confirmarReserva.php" >
+    <label for="">Id de reserva a confirmar</label>
+    <input type="text" name="idReserva" value="">
+    <button type="submit" class="btn btn-primary" >Confirmar</button>
+  </form>
+  </div>`
+
+  document.getElementById('resultado').innerHTML=datos;
+}
+
+function finalizar(){
+  let datos ='';
+  datos+= `<div class="resultss">
+  <form class="" method="post" action=".././controlador/finalizarReserva.php" >
+    <label for="">Id de reserva a finalizar</label>
+    <input type="text" name="idReserva" value="">
+    <button type="submit" class="btn btn-primary">Finalizar</button>
+  </form>
+  </div>`
+
+  document.getElementById('resultado').innerHTML=datos;
+}

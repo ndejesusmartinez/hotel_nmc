@@ -1,5 +1,5 @@
 <?php
-require "../php/conexion.php";
+require ".././controlador/conexion.php";
 
 $nombres=$_POST['nombres'];
 $apellidos=$_POST['apellidos'];
@@ -13,7 +13,7 @@ $sql="insert into reservas(nombres,apellidos, f_entrada, f_salida, correo, ident
 if (mysqli_query($conn, $sql)) {
       ?>
       <script type="text/javascript">
-        alert("Reservacion Exitosa"); window.location='./reservas.html';
+        alert("Reservacion Exitosa"); window.location='.././admin/reservas.html';
       </script>
       <?php
 } else {

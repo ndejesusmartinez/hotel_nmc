@@ -9,6 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"&amp;gt;>
     <script src="https://kit.fontawesome.com/c1eae85dfa.js" crossorigin=" "> </script>
     <link rel="stylesheet" href="estilos.css">
+    <script src="app.js"></script>
+
   </head>
 <div class="contenedor_total">
 
@@ -32,14 +34,14 @@
     <legend> DATOS DE TU RESERVA</legend>
     <form class="formulario1" action="php/enviar.php" method="post" name="formulario">
       <div class="inputs">
-        <input type="text" id="nombre" name="nombres" value="" placeholder="NOMBRES">
-        <input type="text" id="apellidos" name="apellidos" value="" placeholder="APELLIDOS">
-        <input type="date" id="f_entrada" name="f_entrada" value="">
-        <input type="date" id="f_salida" name="f_salida" value="">
-        <input type="email" id="correo" name="correo" value="" placeholder="CORREO">
-        <input type="text" id="identificacion" name="identificacion" value="" placeholder="IDENTIFICACION">
-        <input type="text" id="telefono" name="telefono" value="" placeholder="N° DE TELEFONO">
-        <input type="submit" name="registrar" value="REGISTRAR">
+        <input type="text" id="nombre" name="nombres" value="" placeholder="NOMBRES" required>
+        <input type="text" id="apellidos" name="apellidos" value="" placeholder="APELLIDOS" required>
+        <input type="date" id="f_entrada" name="f_entrada" value="" required>
+        <input type="date" id="f_salida" name="f_salida" value="" required>
+        <input type="email" id="correo" name="correo" value="" placeholder="CORREO" required>
+        <input type="text" id="identificacion" name="identificacion" value="" placeholder="IDENTIFICACION" required>
+        <input type="text" id="telefono" name="telefono" value="" placeholder="N° DE TELEFONO" required>
+        <input type="submit" name="registrar" value="REGISTRAR" onclick="">
       </div>
     </form>
   </div>
@@ -59,5 +61,5 @@
 
 </div>
 
-<script type="text/javascript" src="app.js"></script>
+
 </html>

@@ -12,11 +12,11 @@ $resultado=$conn->query($sql);
           <td><center>ID</center></td>
           <td><center>NOMBRES</center></td>
           <td><center>APELLIDOS</center></td>
-          <td><center>AIDENTIFICACION</center></td>
-          <td><center>TELEFONO</center></td>
           <td><center>FECHA DE INGRESO</center></td>
           <td><center>FECHA DE SALIDA</center></td>
           <td><center>CORREO</center></td>
+          <td><center>TELEFONO</center></td>
+          <td><center>IDENTIFICACION</center></td>
      </tr>
 
  <?php
@@ -24,14 +24,14 @@ while ($datos=$resultado->fetch_array())
  {
  ?>
  <tr>
- <td><center><?php echo $datos['id']?><center></td>
+ <td><center><?php echo $datos['idReserva']?><center></td>
  <td><center><?php echo $datos['nombres']?></center></td>
  <td><center><?php echo $datos['apellidos']?><center></td>
  <td><center><?php echo $datos['f_entrada']?><center></td>
  <td><center><?php echo $datos['f_salida']?><center></td>
  <td><center><?php echo $datos['correo']?><center></td>
  <td><center><?php echo $datos['telefono']?><center></td>
- <td><center><?php echo $datos['identificacion']?><center></td>
+<td><center><?php echo $datos['identificacion']?><center></td>
 </tr>
 <?php
  }
